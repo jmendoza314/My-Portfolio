@@ -1,0 +1,26 @@
+.blue-box {
+    background-color: #5d5c61; /* Nav color */
+}
+
+body {
+    background-color: #7395AE;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.white-text {
+    color: white;
+}
+
+.header {
+    list-style-type: none; /* Removes bullet points */
+    display: inline-block; 
+    margin-right: 60px;
+    padding: 20px;
+}
+
+.nav-right {
+    text-align: right;
+    }
