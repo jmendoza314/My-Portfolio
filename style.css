@@ -1,5 +1,6 @@
-.blue-box {
+.nav-box {
     background-color: #5d5c61; /* Nav color */
+    box-shadow: 5px 10px;
 }
 
 body {
@@ -19,8 +20,17 @@ a {
     display: inline-block; 
     margin-right: 60px;
     padding: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 .nav-right {
     text-align: right;
     }
+
+.center-content-bg {
+    background-color: whitesmoke;
+    height: 1000px;
+    margin-top: 50px;
+
+}
+    
