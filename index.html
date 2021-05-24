@@ -5,39 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
     <title>Jeremy's Portfolio</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="nav-box white-text">
+
+    <!-- Nav Bar -->
+
+    <div class="nav-box nav-shadow nav-right">
         <nav>
-            <ul class="nav-right">
+            <ul>
                 <li class="header"><a href="#">Home</a></li>
-                <li class="header"><a href="#">About</a></li>
-                <li class="header"><a href="#">Portfolio</a></li>
-                <li class="header"><a href="#">Contact</a></li>
+                <li class="header"><a href="#about-me">About</a></li>
+                <li class="header"><a href="#my-work">Portfolio</a></li>
+                <li class="header"><a href="#contact">Contact</a></li>
 
             </ul>
         </nav>
     </div>
 
-    <div class="center-content-bg">
+    <!-- Main Content-->
 
-        <img src="portrait.jpg" alt="A photo of Jeremy"></img>
+    <div class="center-content-bg cont-flex-parent">
+        <div>
+            <h2 class="profile-name">Jeremy Mendoza</h2>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/900x300" class="img-marginb profile-image">
+        </div>
 
+        <div class="cont-flex-child img-marginb"><a id="about-me">
+                <h2>About Me</h2>
+            </a>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non corporis in incidunt fugit
+                    explicabo culpa sint, neque aspernatur saepe, nam unde, dolore dolorum distinctio? Quo iste
+                    recusandae quasi consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non
+                    corporis in incidunt fugit
+                    explicabo culpa sint, neque aspernatur saepe, nam unde, dolore dolorum distinctio? Quo iste
+                    recusandae quasi consectetur?</p>
+            </div>
 
+        </div>
+        <div class="cont-flex-child main-text"><a id="my-work">
+                <h2>My Work</h2>
+            </a>
+            <div class="my-work-div img-marginb">
+                <img src="https://via.placeholder.com/320">
+                <img src="https://via.placeholder.com/320">
+                <img src="https://via.placeholder.com/320">
+            </div>
+        </div>
 
+        <div class="cont-flex-child"><a id="contact">
+                <h2>Contact</h2>
+            </a>
+            <div>
+                <img src="https://via.placeholder.com/600x100" class="footer-contact img-marginb">
 
+            </div>
 
-
-
-
+        </div>
 
 
     </div>
