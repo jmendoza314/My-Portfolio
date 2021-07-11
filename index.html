@@ -5,88 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&family=Tourney:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Jeremy's Portfolio</title>
+
+    <title>Jeremy Mendoza</title>
 </head>
 
 <body>
-    <a name="top"></a>
-
-    <!-- Nav Bar -->
-
-    <div class="nav-box nav-shadow nav-right">
-        <nav>
-            <ul>
-                <li class="header"><a href="#">Home</a></li>
-                <li class="header"><a href="#about-me">About</a></li>
-                <li class="header"><a href="#my-work">Portfolio</a></li>
-                <li class="header"><a href="#contact">Contact</a></li>
-
-            </ul>
-        </nav>
+    <!-- Navigation -->
+    <nav>
+        <li class="justify-content-end">
+            <ul><a href="#" id="home" class="hide">Home</a></ul>
+            <ul><a href="#" id="about">About</a></ul>
+            <ul><a href="#" id="portfolio">Portfolio</a></ul>
+            <ul><a href="#" id="contact">Contact</a></ul>
+        </li>
+    </nav>
+    <!-- Profile Picture -->
+    <div class="text-center homepage">
+        <img src="profilepiccopy.jpg" alt="profile picture of Jeremy Mendoza" width="600px" id='profilepic'>
+        <div class="profile-name"><span>J</span>eremy</div>
+        <div class="profile-name"><span>M</span>endoza</div>
+    </div>
+    <!-- About Me Section -->
+    <div class="row no-gutters hide" id="aboutMe">
+        <div class="col-6 col-md-4"><img src="profilepiccopy.jpg" alt="profile picture of Jeremy Mendoza" width="200px"
+                id='aboutMePic'></div>
+        <div class="col-12 col-sm-6 col-md-8">
+            <p class='aboutMe'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, itaque. Ipsum veniam enim
+                eveniet aperiam maiores sequi corporis incidunt odit perferendis commodi. Ullam nemo distinctio sunt
+                dignissimos ipsa minus amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid illo
+                sunt eveniet? Unde, dignissimos ratione, eaque at explicabo pariatur asperiores sunt minima suscipit
+                aliquid voluptate eveniet architecto magni itaque?</p>
+        </div>
     </div>
 
-    <!-- Main Content-->
-
-    <div class="center-content-bg cont-flex-parent">
-        <div>
-            <h2 class="profile-name">Jeremy Mendoza</h2>
+    <!-- Portfolio Page -->
+    <div class="container text-center portfolioPage hide">
+        <div class="row row-cols-2">
+            <div class="col"><a href="https://jmendoza314.github.io/work-day-scheduler/"><img src="workschedule.jpg"
+                        alt='work schedule web app' height="300 px" class="imgscale"></a></div>
+            <div class="col"><a href='https://jmendoza314.github.io/time-zone/'><img src="timezone.jpg" alt="time zone web app" height="300px"
+                        class="imgscale"></a></div>
+            <div class="col"> Daily Work Calender App</div>
+            <div class="col">World Time Zone App</div>
         </div>
-        <div>
-            <img src="https://via.placeholder.com/900x250" class="profile-image">
-        </div>
-
-        <!-- About Me -->
-        <div class="cont-flex-child"><a id="about-me">
-                <h2>About Me</h2>
-            </a>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non corporis in incidunt fugit
-                    explicabo culpa sint, neque aspernatur saepe, nam unde, dolore dolorum distinctio? Quo iste
-                    recusandae quasi consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non
-                    corporis in incidunt fugit
-                    explicabo culpa sint, neque aspernatur saepe, nam unde, dolore dolorum distinctio? Quo iste
-                    recusandae quasi consectetur?</p>
-            </div>
-
-        </div>
-
-        <!-- My Work -->
-
-        <div class="cont-flex-child main-text"><a id="my-work">
-                <h2>My Work</h2>
-            </a>
-            <div>
-                <img src="https://via.placeholder.com/320" class="img-space">
-                <img src="https://via.placeholder.com/320" class="img-space">
-                <img src="https://via.placeholder.com/320" class="img-space">
-            </div>
-        </div>
-
-        <!--Contact Information-->
-        
-        <div class="cont-flex-child"><a id="contact">
-                <h2>Contact</h2>
-            </a>
-            <div>
-                <img src="https://via.placeholder.com/600x100" class="footer-contact img-marginb">
-
-            </div>
-
-        </div>
-        <a href="#top" class="btt">Top of Page</a>
-
     </div>
 
+    <!-- Contact Info -->
 
+    <div class="text-center contactInfo hide">
+        <p>Jeremy Mendoza</p>
+        <p>Professional Web Developer</p>
+        <p>jermendoza05@gmail.com</p>
+        <p>(909) 609-1321</p>
+    </div>
+    <script src="script.js"></script>
+</body>
 </body>
 
 </html>

@@ -1,104 +1,106 @@
 body {
-    background-color: #7395AE;
+    background-color: #3a3b3c;
 }
 
-/* Nav */
-.nav-box {
-    background-color: #5d5c61; 
-    box-shadow: 5px 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-shadow {
-  color: white;
-}
-
-.header {
-    list-style-type: none; /* Removes bullet points */
-    display: inline-block; 
-    margin-right: 60px;
-    padding: 20px;
-    font-family: 'Lato', sans-serif;
-}
-.nav-right {
+li {
+    font-size: 18px;
     text-align: right;
-    }
-
-/* Content Header */
-h2 {
-    font-size: 40px;
-    font-family: 'Pattaya', sans-serif;
-}
-
-/* p chacateristics */
-p {
-    font-size: 20px;
-    font-family: 'KoHo', sans-serif;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.center-content-bg {
-    background-color: whitesmoke;
-    margin-top: 50px;
-
-}
-
-.cont-flex-parent {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    margin: 10px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+}
+
+ol, ul {
+    padding-left: 120px;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.main {
+    height: 650px;
+    background-color: #111111;
+    margin: 45px;
+}
+#profilepic {
+    border-radius: 50%;
+    margin-top: 100px;
 }
 
 .profile-name {
-    font-family: 'Bungee Outline', cursive;
-    color: black;
-    font-size: 60px;
+    font-family: 'Tourney', cursive;
+    color: whitesmoke;
+    position: relative;
+    bottom: 405px;
+    left: 393px;
+    font-size: 75px;
+}
+span {
+    color: #3a3b3c
+}
+.circle {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background-color: white;
 }
 
-.cont-flex-child {
-    text-align: center;
-    border: 2px solid black;
-    width: 90%;
-    margin-bottom: 20px;
+.contactInfo {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 22px;
+    color: whitesmoke;
+    margin-top: 200px;
 }
 
-.img-space {
-    margin: 4px;
+.aboutMe {
+    font-family: 'Varela Round', sans-serif;
+    color: whitesmoke;
+    margin-top: 180px;
 }
 
-/* Back to the Top */
-.btt {
-    font-family: 'KoHo', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
+#aboutMePic {
+    border-radius: 50%;
+    margin: 90px;
 }
 
-/* Media */
+.portfolioPage {
+    margin-top: 150px;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+.hide {
+    display: none;
+}
 
-@media screen and (max-width: 768px) {
-    .header {
-        display: block;
-        text-align: center;
-    } 
+.imgscale:hover {
+    transform: scale(1.1);
+}
 
+
+@media (max-width: 1160px) {
+    #profilepic {
+      width: 450px;
+    }
     .profile-name {
-        text-align: center;
+        font-size: 40px;
+        bottom: 280px;
+        left: 276px;
     }
-    
-    .footer-contact {
-        width: 400px;
+  }
+@media (max-width: 768px) {
+    ol, ul {
+        padding-left: 60px;
     }
-}
-@media screen and (max-width: 1030px) {
-    .profile-image {
-        width: 650px;
+
+    #profilepic {
+      width: 300px;
     }
-}
+    .profile-name {
+        font-size: 40px;
+        bottom: 208px;
+        left: 201px;
+    }
+  }
